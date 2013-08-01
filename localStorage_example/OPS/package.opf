@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="en" unique-identifier="pub-id" prefix="rendition: http://www.idpf.org/vocab/rendition/#">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:title id="title">Epub 3 and Local Storage</dc:title>
+    <dc:creator id="creator">BAUM</dc:creator>
+    <dc:language>en</dc:language>
+    <dc:identifier id="pub-id">Anadolu University</dc:identifier>
+    <dc:source>>Anadolu University</dc:source>
+    <meta property="dcterms:modified">2013-04-11T04:10:23Z</meta>
+    <dc:date>2013</dc:date>
+    <dc:publisher>Computer Research and Application Center</dc:publisher>
+    <dc:rights>©2013 Anadolu University. All rights reserved</dc:rights>
+    <dc:description>Usage of Local Storage with Epub 3</dc:description>
+	<meta property="rendition:layout">pre-paginated</meta>
+	<meta property="rendition:orientation">landscape</meta>
+	<meta property="rendition:spread">none</meta> 
+</metadata>
+<manifest>
+    <item id="toc" properties="nav" href="TOC.xhtml" media-type="application/xhtml+xml" />
+    <item id="cover" properties="scripted" href="book/cover.xhtml" media-type="application/xhtml+xml" />
+    <item id="cover-image" properties="cover-image" href="images/yenicover.png" />
+    <item id="s002" properties="scripted" href="book/s002.xhtml" media-type="application/xhtml+xml" />
+    <item id="s003" properties="scripted" href="book/s003.xhtml" media-type="application/xhtml+xml" />
+    <item id="s004" properties="scripted" href="book/s004.xhtml" media-type="application/xhtml+xml" />
+    
+</manifest>
+
+<spine page-progression-direction="ltr">
+    <itemref idref="cover" linear="yes" properties="rendition:page-spread-center"/>
+    <itemref idref="s002" linear="yes" />
+    <itemref idref="s003" linear="yes" /> 
+    <itemref idref="s004" linear="yes" />                     
+</spine>
+</package>

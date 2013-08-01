@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en">
+  <head>
+    <meta http-equiv="default-style" content="text/html; charset=utf-8"/>
+    <title>Page 3</title>
+  <meta name="viewport" content="width=1024, height=748"/>
+    <link rel="stylesheet" href="css/local.css" type="text/css"/>
+
+
+//LOCAL STORAGE
+       <script type="text/javascript">
+        var pageId="Page3";
+        
+        function storeNote(id) {
+            var note = document.getElementById('note').innerHTML;
+            localStorage.setItem(pageId,note);
+        }
+
+        function getNote() {
+            if ( localStorage.getItem(pageId)) {
+                var note = localStorage.getItem(pageId);
+            }
+            else {
+                var note = 'Take Note!';
+            }
+        document.getElementById('note').innerHTML = note;
+
+        }
+
+//CLEAR LOCAL STORAGE ON THIS PAGE
+      function clearLocalStorage(id) {
+        localStorage.removeItem(pageId); 
+        document.getElementById('note').innerHTML='Take Note!'
+    }
+
+    </script>
+  </head>
+  
+
+<body style="margin:0.00em; text-align:center; background:#99FFFF;">
+
+<h1>Page 3</h1>
+
+<div id="note_area">
+    <pre id="note" contenteditable="true" onkeyup="storeNote(this.id);">Take Note!</pre>
+    <br></br>
+    <a href='' onclick='clearLocalStorage();'>Clear local storage on this page</a>
+</div>
+
+
+<script>
+    getNote();
+</script>
+
+  
+    </body>
+</html>

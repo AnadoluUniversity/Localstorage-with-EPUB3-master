@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en">
+  <head>
+    <meta http-equiv="default-style" content="text/html; charset=utf-8"/>
+    <title>Display All Local Storage</title>
+	<meta name="viewport" content="width=1024, height=748"/>
+ 
+  <script src="js/getStorage.js"></script>    
+  </head>
+
+  <body onload="fillTable()">
+	
+
+
+  <h1>Display All Local Storage</h1>
+  <div>Açıklama bla bla blaaaaa</div>
+
+<div id="pg3" style="border:solid;">
+  <h2><div id="keys1">Key1</div></h2>
+  <div id="values1">Not1</div>
+</div>
+
+  <br></br>
+
+<div id="pg2" style="border:solid;">
+  <h2><div id="keys2">Key2</div></h2>
+  <div id="values2">Not2</div>
+ </div>
+
+
+ <script>
+  getStorageById();
+  setInterval(function() {getStorageById();}, 500);
+</script>
+
+
+   
+ 
+    </body>
+</html>
