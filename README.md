@@ -83,4 +83,8 @@ And add the code below to body.
 
     <a href='' onclick='clearLocalStorage();'>Clear local storage on this page</a>
     
-If you want to clear all of the localStorage items, you can use "localStorage.clear();" without using any key/id. 
+If you want to clear all of the localStorage items, you can use "localStorage.clear();" without using any key/id. <br>
+## Creators
+<br>
+[Zeynep İdil Erzurum github](https://github.com/zierzurum)<br>
+[Erk Ekin github](https://github.com/erkekin), [twitter](https://twitter.com/erkekin)<br>
